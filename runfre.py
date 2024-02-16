@@ -5,7 +5,7 @@ import requests
 # API anahtarları ve bot tokenı
 api_id = '27149351'
 api_hash = '2edf2bdf7cb587effd7dc089f1989cb5'
-bot_token = '6800985671:AAEgVmeoD3N6RYDnGMeGxYxFOfdariUz76k'
+bot_token = '6800985671:AAE0mTM4g_slnIqwwoJ87omchimO0bQ4fXk'
 
 # Client oluşturma
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
