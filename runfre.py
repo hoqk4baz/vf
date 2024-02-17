@@ -30,7 +30,7 @@ def start(client, message):
     # Kullanıcı adını al
     user_name = message.from_user.first_name
     # Hoş geldin mesajını oluştur
-    welcome_message = f"Merhaba {user_name}👑\n\nBotu öylesine yaptım\nBu Yüzden Kötülemeyin\nNe demişler tipi değil işlevi :)\nBilgi butonuna basarak bilgilen\n\nKanal: @darkenza_official"
+    welcome_message = f"Merhaba {user_name}👑\n\nBotu öylesine yaptım\nBu Yüzden Kötülemeyin\nNe demişler tipi değil işlevi :)\nBilgi butonuna basarak bilgilen\n\nKanal: @darkenza_officiall"
     # Butonları oluştur
     buttons = [
         [InlineKeyboardButton("BiSohbet", callback_data="bi_sohbet"),
@@ -45,7 +45,7 @@ def start(client, message):
 @app.on_callback_query(filters.regex("bilgi"))
 def bilgi_callback(client, callback_query):
     # Bilgi metni
-    bilgi_mesaji = "👑 Bot Sayesinde BiSohbet Premium Ücretsiz\nBiSohbet Butonuna Tıkla Numaranı Gir\nArdından Sms ile Gelen kodu gir\nArtık Premium'a Sahipsin :)\n\nBot Sahibi Kanal @darkenza_official"
+    bilgi_mesaji = "👑 Bot Sayesinde BiSohbet Premium Ücretsiz\nBiSohbet Butonuna Tıkla Numaranı Gir\nArdından Sms ile Gelen kodu gir\nArtık Premium'a Sahipsin :)\n\nBot Sahibi Kanal @darkenza_officiall"
     # Mesajı güncelle
     callback_query.message.edit_text(f"{bilgi_mesaji}")
 
@@ -137,4 +137,3 @@ def get_code(client, message):
         client.send_message(message.chat.id, "[+]Premium Alındı İşlem Tamam /start")
 print("Bot Başlatıldı")
 app.run()
-  
